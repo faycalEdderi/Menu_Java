@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
 		// Creation des donnée a affichés
-		Object[] data = new Object[]{"", "Menu Carnivore", "Menu Marin", "Menu Herbivore", };
+		String[] data = new String[]{"", "Menu Carnivore", "Menu Marin", "Menu Herbivore", };
 		String[] carnivore = new String[]{"Verrine au foie gras","Steak 380g & PdT sauce chasseur", "Tartelette chocolat"};
 		String[] marin = new String[]{"Trio de la mer (saint jacques, moules, saumon fumé) ", "Saumon & Riz sauce bernaise", "Tiramisu Coco" };
 		String[] herbivore = new String[]{"Salade de choux","Steak Végétarien & Julienne de 3 legumes", "Crumble Pomme Fruits Rouges"};
@@ -111,7 +111,7 @@ public class Main {
 					// Create file
 					FileWriter fstream = new FileWriter(System.currentTimeMillis() + "_ticket"+ myDate + ".txt");
 					BufferedWriter out = new BufferedWriter(fstream);
-					out.write("le : " + myDate + "\n" + " Votre commande est bien réservé \n"+ "Vous avez choisi : " + menuChoice + "\n" + " Merci d'avoir utilisé nos services" );
+					out.write("le : " + myDate + "\n" + "Votre commande est bien réservé \n"+ "Vous avez choisi : " + menuChoice + "\n" + "Merci d'avoir utilisé nos services" );
 					//Close the output stream
 					out.close();
 				}catch (Exception ex){//Catch exception if any
